@@ -45,7 +45,7 @@ Resources:
         CPUCredits:
           !If [IsBurstableInstanceType, unlimited, !Ref "AWS::NoValue"]
       IamInstanceProfile: !Ref "WebAppInstanceProfile"
-      ImageId: !Ref "ImageId"
+      ImageId: "ami-07688a0075beb980e"
       InstanceType: !Ref "InstanceType"
       KeyName: !Ref "KeyPairName"
       NetworkInterfaces:
