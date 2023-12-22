@@ -1,0 +1,12 @@
+#!/bin/bash
+
+cd /home/ec2-user
+
+sudo yum update
+
+# Install php
+sudo amazon-linux-extras install -y php7.2
+
+curl -sS https://getcomposer.org/installer | php
+
+mv composer.phar /usr/local/bin/composer

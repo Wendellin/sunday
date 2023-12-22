@@ -10,6 +10,9 @@ hooks:
   - location: scripts/install_python3
     timeout: 300
     runas: root
+  - location: scripts/install_php
+    timeout: 300
+    runas: root
   - location: scripts/codestar_remote_access
     timeout: 300
     runas: root
